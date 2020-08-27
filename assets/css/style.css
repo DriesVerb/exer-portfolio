@@ -21,6 +21,12 @@ a#home.active, a#about.active, a#contact.active, a#portfolio.active, a#services.
 } 
 
 nav a#about:hover, nav a#services:hover, nav a#portfolio:hover, nav a#contact:hover, nav a#home:hover {
+    background-color: darkgray;
+    color: white;
+    transition: all .2s;
+}
+
+nav a#about.active:hover, nav a#services.active:hover, nav a#portfolio.active:hover, nav a#contact.active:hover, nav a#home.active:hover {
     background-color: black;
     color: white;
 }
@@ -41,4 +47,47 @@ nav a:link, nav a:visited {
     font-weight: 700;
     padding: .5rem 1rem;
     margin: 0 1rem;
+}
+
+/* homepage for main */
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+main img {
+    height: 35rem;
+    padding: 2rem;
+}
+
+main div {
+    margin: 3rem 0;
+}
+
+main div h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgb(5, 70, 235);
+}
+
+main div p {
+    font-size: 1.5rem;
+    padding: 4rem 0;
+}
+
+main div.home__main a {
+    text-decoration: none;
+    background-color: seagreen;
+    padding: 0.5rem 5rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+main div.home__main a:hover{
+    color: seagreen;
+    background-color: white;
+    border: 2px solid seagreen;
+    transition: all 1s;
 }

@@ -20,8 +20,9 @@ a#home.active, a#about.active, a#contact.active, a#portfolio.active, a#services.
     color: white;
 } 
 
-nav a:hover {
-    border: 1px solid black;
+nav a#about:hover, nav a#services:hover, nav a#portfolio:hover, nav a#contact:hover, nav a#home:hover {
+    background-color: black;
+    color: white;
 }
 
 
@@ -38,4 +39,6 @@ nav a:link, nav a:visited {
     color: black;
     font-family: 'Mukta', sans-serif;
     font-weight: 700;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
 }
